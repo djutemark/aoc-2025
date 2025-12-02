@@ -1,7 +1,3 @@
-#![allow(unused)]
-
-use std::ops::AddAssign;
-
 fn main() {
     let input = include_str!("input.txt");
 
@@ -32,6 +28,7 @@ impl Dial {
         }
     }
 
+    #[allow(dead_code)]
     fn current_value(&self) -> i16 {
         self.value
     }
